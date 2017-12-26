@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="js/micro-template.js"></script>
+</head>
+<body>
+<script type="application/x-template" id="tmpl1">
+    <div class='foobar' id="aaa">
+        <% if (isFoo) { %>
+        <%= foobar %>
+        <% } else { %>
+        <%= foobaz %>
+        <% } %>
+
+        <%=raw html %>
+    </div>
+</script>
+<script>
+    window.onload = function () {
+        var html = template('tmpl1', { 
+            isFoo : true,
+            foobar : 'foobar!!',
+            foobaz : 'foobaz!!',
+            html : '<marquee>Helloooo</marquee>'
+        });
+        console.log(html);
+    };
+</script>
+</body>
+</html>

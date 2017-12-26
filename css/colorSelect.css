@@ -1,0 +1,61 @@
+select{
+    width:170px;
+    height:34px;
+}
+.am-selected.mySelect li span.color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right:5px;
+    border-color: rgba(0, 0, 0,0);
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+.am-selected.mySelect{
+    display: inline-block;
+    position: relative;
+}
+.am-selected.mySelect .select_content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1020;
+    float: left;
+    width: 100%;
+    min-width: 160px;
+    padding: 0;
+    margin:2px 0 0;
+    text-align: left;
+    line-height: 1.6;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-animation-duration: .15s;
+    animation-duration: .15s;
+}
+.am-selected.mySelect .am-selected-list li.selected,.am-selected-list li:hover{
+    background-color: #f8f8f8;
+}
+.am-selected.mySelect .am-selected-list .am-selected-text{
+    display:inline-block;
+}
+.am-selected.mySelect .am-selected-status{
+    text-align: left;
+    width: 80%;
+    display: inline-block;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.am-selected.mySelect .am-dropdown-toggle span.button_color{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right:8px;
+    float: left;
+    border-color: rgba(0, 0, 0,0);
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
